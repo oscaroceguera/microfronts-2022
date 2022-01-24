@@ -11,8 +11,9 @@ module.exports = {
       name: "cart",
       filename: "remoteEntry.js",
       exposes: {
-        "./CartShow": "./src/index",
+        "./CartShow": "./src/bootstrap",
       },
+      shared: ["chance"],
     }),
     new HtmlWebpaclPlugin({
       template: "./public/index.html",
